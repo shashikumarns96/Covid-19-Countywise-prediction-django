@@ -1,0 +1,13 @@
+{% extends "covid_app1/home.html" %}
+
+
+{% block content1 %}
+<table>
+    {% for key, value in cases.items %}
+    <tr>
+        <td> {{ key }}: </td> <td> {{ value }} </td>
+    </tr>
+ {% endfor %}
+</table>
+{% endblock content1 %}
+
